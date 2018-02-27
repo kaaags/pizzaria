@@ -4,20 +4,20 @@ for(var i=0; i<update.length; i++){
 	var pElem = document.createElement('p');
 	var pText = document.createTextNode('==========');
 	pElem.appendChild(pText);
-	document.getElementsByClassName('pizza').appendChild(pElem);
+	document.getElementsByClassName('pizza')[0].appendChild(pElem);
 
 	var pElem0 = document.createElement('p');
 	var pText0 = document.createTextNode(update[i].pizzaName);
 	pElem0.appendChild(pText0);
-	document.getElementsByClassName('pizza').appendChild(pElem0);
+	document.getElementsByClassName('pizza')[0].appendChild(pElem0);
 
 	var pElem1 = document.createElement('p');
 	var pText1 = document.createTextNode(update[i].description);
 	pElem1.appendChild(pText1);
-	document.getElementsByClassName('pizza').appendChild(pElem1);
+	document.getElementsByClassName('pizza')[0].appendChild(pElem1);
 
 	var pElem2 = document.createElement('p');
 	var pText2 = document.createTextNode(update[i].price);
 	pElem2.appendChild(pText2);
-	document.getElementsByClassName('pizza').appendChild(pElem2);
+	document.getElementsByClassName('pizza')[0].appendChild(pElem2);
 }
